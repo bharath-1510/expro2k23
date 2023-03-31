@@ -16,11 +16,11 @@
  }
 
  .back-video {
-   position: relative;
+   position: fixed;
    top: 0;
    left: 0;
-   width: 100%;
-   height: 100%;
+   width: 100vw;
+   height: 100vh;
    object-fit: cover;
  }
 
@@ -33,6 +33,7 @@
  .home-card {
    background-color: black;
    text-align: center;
+   
  }
 
  .intro-number-plus {
@@ -120,10 +121,48 @@
    background-color: black;
    background-size: cover;
  }
+ .section-heading {
+   color: white;
+   font-weight: 600;
+   font-size: 32px;
+   padding-top: 65px;
+ }
 
+ .section-bg-container {
+   background-color: black;
+   background-size: cover;
+
+ }
+
+ .section-card {
+   background-color: rgb(24, 22, 22);
+   border-radius: 8px;
+   border-width: 0px;
+ }
+
+ .section-card-description {
+   color: white;
+   font-size: 20px;
+   font-weight: 400;
+ }
+
+ .section-card-image {
+   height: 300px;
+   width: 100%;
+   border-width: 0px;
+ }
+
+ .register-now-button {
+   background-image: linear-gradient(to left, #0BAB64#3BB78F);
+   color: silver;
+   border-width: 5px;
+   border-style: outset;
+   font-size: 16px;
+   font-weight: 500;
+ }
  .workshops-bg-container {
    background-size: cover;
-   padding: 20px;
+   padding: 5px;
    height: 300px;
    width: 100%;
    border-radius: 8px;
@@ -159,7 +198,7 @@
 
  .tech-bg-container {
    background-size: cover;
-   padding: 20px;
+   padding: 5px;
    height: 300px;
    width: 100%;
    border-radius: 8px;
@@ -168,7 +207,7 @@
 
  .non-tech-bg-container {
    background-size: cover;
-   padding: 20px;
+   padding: 5px;
    height: 300px;
    width: 100%;
    border-radius: 8px;
@@ -234,7 +273,7 @@
  }
 
  .lg-carousel-card-1 {
-   background-image: url("https://mitindia.edu/Mit_Codes_custom/MIT_banner/img/landscape/03.jpg");
+   background-image: url("../asset/img/01.jpg");
    background-size: cover;
    width: 100%;
    height: 400px;
@@ -243,7 +282,7 @@
  }
 
  .lg-carousel-card-2 {
-   background-image: url("http://www.pt.mitindia.edu/data1/images/pt_entrance.jpg");
+   background-image: url("../asset/img/02.jpg");
    background-size: cover;
    width: 100%;
    height: 400px;
@@ -252,7 +291,7 @@
  }
 
  .lg-carousel-card-3 {
-   background-image: url("https://images.shiksha.com/mediadata/images/1511247692phpZpyHYO.png");
+   background-image: url("../asset/img/03.png");
    background-size: cover;
    width: 100%;
    height: 400px;
@@ -261,11 +300,11 @@
  }
 
  video {
-   width: 100vw;
+   width: 100%;
    height: 100vh;
    object-fit: cover;
-   position: fixed;
+   position: relative;
    top: 0;
    left: 0;
-   z-index: 1;
+   z-index: -1;
  }
